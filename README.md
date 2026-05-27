@@ -59,7 +59,7 @@ sequence\_detector/
 │
 
 ├── src/                        # RTL design files
-
+    
 │   ├── top\_module.v            # Top-level integration
 
 │   ├── shift\_register.v        # N-bit serial shift register
@@ -158,15 +158,13 @@ Waveform analysis and signal debugging in GTKWave
 
 
 
-&#x20;Parameterize sequence length (N) and target pattern for reusability
 
-&#x20;Add support for multiple simultaneous sequence targets
 
 &#x20;FPGA implementation and hardware testing (Xilinx / Intel)
 
 &#x20;Integrate UART input for real-time serial stream detection
 
-&#x20;GUI-based simulation automation using Makefile or Python scripts
+
 
 
 
