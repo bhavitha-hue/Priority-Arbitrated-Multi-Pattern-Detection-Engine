@@ -1,4 +1,4 @@
-📌 Overview
+Overview
 
 This project implements a binary sequence detector using a Shift Register approach in Verilog HDL. The design continuously monitors a serial input stream and asserts an output signal when the target binary sequence is detected.
 
@@ -8,7 +8,7 @@ The design is functionally verified using a custom testbench, simulated with Ica
 
 
 
-⚙️ Features
+Features
 
 
 
@@ -26,7 +26,7 @@ Waveform output (.vcd) for visual debugging in GTKWave
 
 
 
-🧠 Design Methodology
+Design Methodology
 
 The sequence detector is built around a shift register + comparator architecture:
 
@@ -52,7 +52,7 @@ This approach avoids the complexity of state encoding and is especially efficien
 
 
 
-🗂️ Project Structure
+Project Structure
 
 sequence\_detector/
 
@@ -82,8 +82,6 @@ sequence\_detector/
 
 ├── docs/                       # Documentation
 
-├── constraints/                # Constraint files (for FPGA implementation)
-
 ├── output/
 
 │   └── wave.vcd                # Simulation waveform dump
@@ -96,7 +94,7 @@ sequence\_detector/
 
 
 
-🧪 Simulation Setup
+ Simulation Setup
 
 Make sure Icarus Verilog and GTKWave are installed before proceeding.
 
@@ -116,9 +114,21 @@ bashgtkwave wave.vcd
 
 Open the relevant signals (clk, serial\_in, shift\_reg, match\_out) in GTKWave to inspect behavior.
 
+Block Diagram
+
+![Block Diagram](docs/BLOCK_DIAGRAM_SD.jpeg)
+
+ FSM Flowchart
+
+![FSM Flowchart](docs/FSM_SD.jpeg)
+
+Simulation Waveform
+
+![Waveform](docs/WAVEFORM_SD.png)
 
 
-📊 Expected Output
+
+ Expected Output
 
 SignalBehaviorserial\_inSerial bits applied one per clock cycleshift\_reg\[N-1:0]Updates every cycle; holds the last N input bitsmatch\_outGoes HIGH for one cycle when shift register matches target sequence
 
@@ -130,15 +140,13 @@ Note: Overlapping occurrences of the sequence are also detected since no reset i
 
 
 
-🛠️ Tools Used
+ Tools Used
 
 ToolPurposeVerilog HDLRTL design and testbenchIcarus VerilogCompilation and simulationGTKWaveWaveform visualization and debugging
 
 
 
-📈 Learning Outcomes
-
-
+ Learning Outcomes
 
 Shift register design and serial data handling in Verilog
 
@@ -152,11 +160,7 @@ Waveform analysis and signal debugging in GTKWave
 
 
 
-
-
-🚀 Future Improvements
-
-
+ Future Improvements
 
 
 
@@ -167,10 +171,7 @@ Waveform analysis and signal debugging in GTKWave
 
 
 
-
-
-
-👩‍💻 Author
+ Author
 
 Bhavitha
 
