@@ -83,6 +83,8 @@ sequence_detector/
 │   ├── priority_override.v
 │   ├── counter_module.v
 │   └── top_module.v
+│   ├── display_controller.v
+│   └── comparator.v
 │
 ├── tb/
 │   └── top_module_tb.v
