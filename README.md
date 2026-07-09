@@ -82,8 +82,8 @@ sequence_detector/
 │   ├── conflict_detector.v
 │   ├── priority_override.v
 │   ├── counter_module.v
-│   └── top_module.v
 │   ├── display_controller.v
+│   └── top_module.v
 │  
 │
 ├── tb/
@@ -92,6 +92,7 @@ sequence_detector/
 ├── docs/
 │   ├── BLOCK_DIAGRAM_SD.jpeg
 │   ├── FSM_SD.jpeg
+│   ├── SEQUENCE_TB.jpeg
 │   └── WAVEFORM_SD.png
 │
 ├── README.md
