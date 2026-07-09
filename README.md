@@ -204,6 +204,10 @@ When two or more sequences are detected simultaneously:
 
 This ensures deterministic behavior during multiple matches.
 
+## Testbench Results
+
+![Results](docs/SEQUENCE_TB.png)
+
 # Simulation Procedure
 
 ## Compile
